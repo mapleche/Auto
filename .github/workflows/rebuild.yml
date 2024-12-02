@@ -9,6 +9,7 @@ env:
   SPACE_LIST: ${{ secrets.SPACE_LIST }}
   SPACE_TIMEOUT_SECONDS: 600
   GLOBAL_TIMEOUT_SECONDS: 1800
+
 jobs:
   rebuild:
     runs-on: ubuntu-latest
