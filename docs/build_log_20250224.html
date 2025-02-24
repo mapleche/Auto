@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>空间构建日志索引</title>
+    <title>空间构建日志 - 2025-02-24</title>
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -28,26 +28,18 @@
             padding-bottom: 10px;
             border-bottom: 2px solid #eee;
         }
-        .log-list {
-            list-style: none;
-            padding: 0;
-        }
-        .log-list li {
-            margin: 10px 0;
-            padding: 15px;
+        .log-entry {
             background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
             border-radius: 8px;
-            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        .log-list li:hover {
-            background: #e9ecef;
-            transform: translateX(5px);
+        .log-entry p {
+            margin: 10px 0;
         }
-        .log-list a {
-            text-decoration: none;
-            color: #0366d6;
-            display: block;
-        }
+        .success { color: #28a745; }
+        .timestamp { color: #666; }
         .footer {
             text-align: center;
             margin-top: 30px;
@@ -66,22 +58,38 @@
             body { padding: 10px; }
             .container { padding: 15px; }
         }
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>空间构建日志索引</h1>
-        <ul class="log-list">
-        <li><a href="build_log_20250224.html">2025-02-24 构建日志</a></li>
-        <li><a href="build_log_20250223.html">2025-02-23 构建日志</a></li>
-        <li><a href="build_log_20250222.html">2025-02-22 构建日志</a></li>
-        <li><a href="build_log_20250221.html">2025-02-21 构建日志</a></li>
-        <li><a href="build_log_20250220.html">2025-02-20 构建日志</a></li>
-        <li><a href="build_log_20250219.html">2025-02-19 构建日志</a></li>
-                  </ul>
-                  <div class="footer">
-                      <p><a href="https://linux.do" target=_blank>LINUX DO</a></p>
-                  </div>
-              </div>
-          </body>
-          </html>
+        <h1>空间构建日志</h1>
+        <div class="log-entry">
+            <p><strong>构建时间:</strong> <span class="timestamp">2025-02-24 09:29:06</span></p>
+            <p><strong>触发事件:</strong> schedule</p>
+            <p><strong>工作流程:</strong> <a href="https://github.com/mapleche/Auto/actions/runs/13488930314" target="_blank">查看详情</a></p>
+            <p><strong>构建结果:</strong></p>
+            <pre>总计空间数: 3
+成功数量: 2
+失败数量: 0
+未知状态数量: 1
+--------------------------------------------------
+具体结果:
+✅ lingva
+✅ AI
+❓ transweb
+</pre>
+        </div>
+        <div class="footer">
+            <p><a href="https://linux.do" target="_blank">LINUX DO</a></p>
+        </div>
+    </div>
+</body>
+</html>
